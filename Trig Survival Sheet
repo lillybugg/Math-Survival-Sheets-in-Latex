@@ -1,0 +1,161 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+\section*{Trigonometric Survival Sheet}
+
+\subsection*{Pythagorean Theorem}
+\[
+a^2 + b^2 = c^2
+\]
+
+\subsection*{Unit Circle Key Values}
+\[
+\begin{array}{c|c|c|c}
+\theta & \sin \theta & \cos \theta & \tan \theta \\
+\hline
+0 & 0 & 1 & 0 \\
+\frac{\pi}{6} & \frac{1}{2} & \frac{\sqrt{3}}{2} & \frac{1}{\sqrt{3}} \\
+\frac{\pi}{4} & \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} & 1 \\
+\frac{\pi}{3} & \frac{\sqrt{3}}{2} & \frac{1}{2} & \sqrt{3} \\
+\frac{\pi}{2} & 1 & 0 & \text{undefined}
+\end{array}
+\]
+
+\subsection*{Radians and Degrees}
+\[
+180^\circ = \pi \text{ radians}
+\]
+\[
+\text{degrees} \cdot \frac{\pi}{180}, \quad \text{radians} \cdot \frac{180}{\pi}
+\]
+
+\subsection*{Signs by Quadrant}
+\[
+\text{QI: All}, \quad \text{QII: Sine}, \quad \text{QIII: Tangent}, \quad \text{QIV: Cosine}
+\]
+
+\subsection*{Reciprocal Identities}
+\[
+\sin \theta = \frac{1}{\csc \theta}, \quad 
+\cos \theta = \frac{1}{\sec \theta}, \quad 
+\tan \theta = \frac{1}{\cot \theta}
+\]
+\[
+\csc \theta = \frac{1}{\sin \theta}, \quad 
+\sec \theta = \frac{1}{\cos \theta}, \quad 
+\cot \theta = \frac{1}{\tan \theta}
+\]
+
+\subsection*{Pythagorean Identities}
+\[
+\sin^2 \theta + \cos^2 \theta = 1
+\]
+\[
+1 + \tan^2 \theta = \sec^2 \theta
+\]
+\[
+1 + \cot^2 \theta = \csc^2 \theta
+\]
+
+\subsection*{Quotient Identities}
+\[
+\tan \theta = \frac{\sin \theta}{\cos \theta}, 
+\quad \cot \theta = \frac{\cos \theta}{\sin \theta}
+\]
+
+\subsection*{Cofunction Identities}
+\[
+\sin \left( \frac{\pi}{2} - \theta \right) = \cos \theta, 
+\quad \cos \left( \frac{\pi}{2} - \theta \right) = \sin \theta
+\]
+\[
+\tan \left( \frac{\pi}{2} - \theta \right) = \cot \theta, 
+\quad \cot \left( \frac{\pi}{2} - \theta \right) = \tan \theta
+\]
+\[
+\sec \left( \frac{\pi}{2} - \theta \right) = \csc \theta, 
+\quad \csc \left( \frac{\pi}{2} - \theta \right) = \sec \theta
+\]
+
+\subsection*{Even-Odd Identities}
+\[
+\sin(-\theta) = -\sin \theta, \quad \cos(-\theta) = \cos \theta
+\]
+\[
+\tan(-\theta) = -\tan \theta, \quad \cot(-\theta) = -\cot \theta
+\]
+\[
+\sec(-\theta) = \sec \theta, \quad \csc(-\theta) = -\csc \theta
+\]
+
+\subsection*{Sum and Difference Formulas}
+\[
+\sin(A \pm B) = \sin A \cos B \pm \cos A \sin B
+\]
+\[
+\cos(A \pm B) = \cos A \cos B \mp \sin A \sin B
+\]
+\[
+\tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A \tan B}
+\]
+
+\subsection*{Double Angle Formulas}
+\[
+\sin(2\theta) = 2 \sin \theta \cos \theta
+\]
+\[
+\cos(2\theta) = \cos^2 \theta - \sin^2 \theta = 2\cos^2 \theta - 1 = 1 - 2\sin^2 \theta
+\]
+\[
+\tan(2\theta) = \frac{2\tan \theta}{1 - \tan^2 \theta}
+\]
+
+\subsection*{Half Angle Formulas}
+\[
+\sin^2 \theta\right) = \frac{1 - \cos \theta}{2}, 
+\quad \cos^2 \theta\right) = \frac{1 + \cos \theta}{2}
+\]
+\[
+\tan \theta\right) = \frac{1 - \cos \theta}{\sin \theta} 
+= \frac{\sin \theta}{1 + \cos \theta}
+\]
+
+\subsection*{Product-to-Sum Formulas}
+\[
+\sin A \sin B = \tfrac{1}{2}[\cos(A-B) - \cos(A+B)]
+\]
+\[
+\cos A \cos B = \tfrac{1}{2}[\cos(A-B) + \cos(A+B)]
+\]
+\[
+\sin A \cos B = \tfrac{1}{2}[\sin(A+B) + \sin(A-B)]
+\]
+
+\subsection*{Sum-to-Product Formulas}
+\[
+\sin A + \sin B = 2 \sin \left(\tfrac{A+B}{2}\right) \cos \left(\tfrac{A-B}{2}\right)
+\]
+\[
+\sin A - \sin B = 2 \cos \left(\tfrac{A+B}{2}\right) \sin \left(\tfrac{A-B}{2}\right)
+\]
+\[
+\cos A + \cos B = 2 \cos \left(\tfrac{A+B}{2}\right) \cos \left(\tfrac{A-B}{2}\right)
+\]
+\[
+\cos A - \cos B = -2 \sin \left(\tfrac{A+B}{2}\right) \sin \left(\tfrac{A-B}{2}\right)
+\]
+
+\subsection*{Inverse Trigonometric Functions}
+\[
+\sin^{-1}(x), \quad \cos^{-1}(x), \quad \tan^{-1}(x)
+\]
+\[
+\sin^{-1}(x): \left[-\tfrac{\pi}{2}, \tfrac{\pi}{2}\right], \quad
+\cos^{-1}(x): [0,\pi], \quad
+\tan^{-1}(x): \left(-\tfrac{\pi}{2}, \tfrac{\pi}{2}\right)
+\]
+
+\end{document}
