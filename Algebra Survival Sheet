@@ -1,0 +1,234 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+\section*{Algebra Survival Sheet}
+
+\subsection*{Basic Properties}
+\[
+a + b = b + a, \quad ab = ba
+\]
+\[
+(a+b)+c = a+(b+c), \quad (ab)c = a(bc)
+\]
+\[
+a(b+c) = ab + ac
+\]
+
+\subsection*{Special Products}
+\[
+(a+b)^2 = a^2 + 2ab + b^2, \quad (a-b)^2 = a^2 - 2ab + b^2
+\]
+\[
+(a+b)(a-b) = a^2 - b^2
+\]
+
+\subsection*{Exponent Rules}
+\[
+a^m a^n = a^{m+n}, \quad \frac{a^m}{a^n} = a^{m-n}
+\]
+\[
+(a^m)^n = a^{mn}, \quad (ab)^n = a^n b^n
+\]
+\[
+a^0 = 1, \quad a^{-n} = \frac{1}{a^n}
+\]
+
+\subsection*{Radical Rules}
+\[
+\sqrt[n]{a^m} = a^{m/n}
+\]
+\[
+\sqrt{ab} = \sqrt{a}\sqrt{b} \ (a \ge 0, b \ge 0)
+\]
+\[
+\sqrt{\tfrac{a}{b}} = \tfrac{\sqrt{a}}{\sqrt{b}} \ (a \ge 0, b > 0)
+\]
+
+\subsection*{Logarithm Rules}
+\[
+\log_b(xy) = \log_b x + \log_b y
+\]
+\[
+\log_b\left(\frac{x}{y}\right) = \log_b x - \log_b y
+\]
+\[
+\log_b(x^r) = r \log_b x
+\]
+\[
+\log_b x = \frac{\ln x}{\ln b}
+\]
+
+\subsection*{Absolute Value}
+\[
+|a| =
+\begin{cases}
+a & a \ge 0 \\
+-a & a < 0
+\end{cases}
+\quad |a| = \sqrt{a^2}
+\]
+
+\subsection*{Rational Expressions}
+\[
+\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}, \quad
+\frac{a}{b} \div \frac{c}{d} = \frac{ad}{bc}
+\]
+
+\subsection*{Factoring}
+\[
+x^2 + bx + c = (x+m)(x+n)
+\]
+\[
+a^2 - b^2 = (a-b)(a+b)
+\]
+\[
+a^3 \pm b^3 = (a \pm b)(a^2 \mp ab + b^2)
+\]
+
+\subsection*{Zero Product Property}
+\[
+ab = 0 \Rightarrow a = 0 \text{ or } b = 0
+\]
+
+\section*{Functions}
+
+\subsection*{Composition}
+\[
+(f \circ g)(x) = f(g(x))
+\]
+
+\subsection*{Inverse Functions}
+\[
+f(f^{-1}(x)) = x
+\]
+\[
+\text{Find inverse: swap } x,y \text{ and solve}
+\]
+
+\subsection*{Even / Odd}
+\[
+f(-x) = f(x) \ (\text{even}), \quad f(-x) = -f(x) \ (\text{odd})
+\]
+
+\subsection*{Domain Restrictions}
+\[
+\text{Denominator } \neq 0
+\]
+\[
+\text{Even root: inside } \ge 0
+\]
+\[
+\log(x): x > 0
+\]
+
+\section*{Linear Equations}
+
+\subsection*{Slope}
+\[
+m = \frac{y_2 - y_1}{x_2 - x_1}
+\]
+
+\subsection*{Forms of a Line}
+\[
+y - y_1 = m(x - x_1)
+\]
+\[
+y = mx + b
+\]
+\[
+Ax + By = C
+\]
+
+\subsection*{Systems}
+\[
+\text{Solve via substitution or elimination}
+\]
+
+\section*{Quadratics}
+
+\subsection*{Forms}
+\[
+y = ax^2 + bx + c
+\]
+\[
+y = a(x-h)^2 + k
+\]
+\[
+y = a(x-r_1)(x-r_2)
+\]
+
+\subsection*{Quadratic Formula}
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+
+\subsection*{Discriminant}
+\[
+b^2 - 4ac
+\]
+
+\section*{Geometry \& Coordinates}
+
+\subsection*{Distance}
+\[
+d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}
+\]
+
+\subsection*{Midpoint}
+\[
+\left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)
+\]
+
+\section*{Inequalities \& Intervals}
+
+\subsection*{Inequalities}
+\[
+\text{Multiply/divide by negative } \Rightarrow \text{ flip sign}
+\]
+
+\subsection*{Domain vs. Range}
+
+\textbf{Domain:} All possible \textit{x-values} you are allowed to plug into a function  
+\textbf{Range:} All possible \textit{y-values} the function can output
+
+\[
+\text{Domain = inputs (horizontal / x-axis)}, \quad
+\text{Range = outputs (vertical / y-axis)}
+\]
+
+\textbf{How to Find Domain:}
+\begin{itemize}
+    \item Denominator cannot be zero
+    \item Even roots require inside $\ge 0$
+    \item Logarithms require inside $> 0$
+\end{itemize}
+
+\textbf{How to Think About Range:}
+\begin{itemize}
+    \item Look at the graph: what y-values are hit?
+    \item Consider max/min values (especially for quadratics)
+    \item Think about transformations (shifts, stretches)
+\end{itemize}
+
+\textbf{Example:}
+\[
+f(x) = x^2
+\]
+\[
+\text{Domain: } (-\infty, \infty), \quad \text{Range: } [0, \infty)
+\]
+
+\subsection*{Interval Notation}
+\[
+(a,b), \ [a,b], \ (-\infty,a), \ (a,\infty)
+\]
+
+\section*{Rates of Change}
+\[
+\frac{f(b) - f(a)}{b - a}
+\]
+
+\end{document}
